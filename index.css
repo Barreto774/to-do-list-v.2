@@ -59,24 +59,18 @@ body{
 #log p {
     font-size: 16pt;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     color: rgb(61, 61, 61);
 }
 
-/*Erro no input*/
-
-.log.success input {
-    border: 3px solid #4ECA64;
-}
-
-.log.error input {
-    border: 3px solid #DB5A5A;
-}
-
-.log small {
-    visibility: hidden;
-    position: absolute;
-    margin-top: 5px;
+.log span {
+    display: none;
     font-size: 14px;
+    margin-top: 0.5rem;
+    text-align:start;
+    margin-left: 472px;
+    color: #DB5A5A;
+    transition: all 1s;
 }
 
 #nome {
@@ -90,7 +84,7 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    transition: all 0.3s;
     
 }
 
@@ -105,7 +99,8 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s;
 }
 
 #email {
@@ -119,7 +114,8 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s;
 }
 
 #senha {
@@ -133,7 +129,8 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s;
 }
 
 #confsenha {
@@ -147,7 +144,8 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s;
 }
 
 .button {
