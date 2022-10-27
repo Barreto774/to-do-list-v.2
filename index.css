@@ -1,0 +1,239 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face {
+    font-family: SulSansRegular;
+    src: local(SulSans), url(SulSans-Regular.otf);
+}
+body{
+    height: 100%;
+    background:cover;
+}
+
+* {
+    font-family: SulSansRegular;
+    margin: 0;
+}
+#text-header {
+    font-weight: bold;
+    
+}
+
+#log {
+    display: block;
+    margin: 0;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20pt;
+    font-weight: bold;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+#header {
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    transition: all 0.5s;
+    font-weight: bold;
+    font-size: 35pt;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+#log p {
+    font-size: 16pt;
+    margin-bottom: 1rem;
+    color: rgb(61, 61, 61);
+}
+
+/*Erro no input*/
+
+.log.success input {
+    border: 3px solid #4ECA64;
+}
+
+.log.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.log small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#nome {
+    color: rgb(61, 61, 61);
+    width: 445px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15pt;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    
+}
+
+#login {
+    color: rgb(61, 61, 61);
+    width: 445px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15pt;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+#email {
+    color: rgb(61, 61, 61);
+    width: 445px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15pt;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+#senha {
+    color: rgb(61, 61, 61);
+    width: 445px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15pt;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+#confsenha {
+    color: rgb(61, 61, 61);
+    width: 445px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15pt;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.button {
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    border: none;
+    font-size: 25pt;
+    font-weight: bold;
+    transition: all 0.5s;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    color:rgb(185, 185, 185);
+}
+
+.box-nome{
+    padding: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    width: 100%;
+    box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
+}
+
+.box-login{
+    padding: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    width: 100%;
+    box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
+}
+
+.box-email{
+    padding: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    width: 100%;
+    box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
+}
+.box-senha{
+    padding: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    width: 100%;
+    box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
+}
+
+.box-conf-senha{
+    padding: 10px;
+    background: rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    width: 100%;
+    box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
+}
+
+a:link{
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+a:link:hover{
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+a:link:visited{
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+a:link:active{
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}

@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>To Do List</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
-    <div class="topo" id="topo">
-        <p id="titulo">To do List</p>
-        <p class="menu" onclick="cadastrar();">Cadastrar</p>
-        <p class="menu" onclick="exibir();">Exibir</p>
+    <div id="header">
+        <p id="text-header">Logar</p>
     </div>
-    <div class="cad" id="cad">
-        <div>
-            <p>Tarefa:</p>
-            <br />
-            <input id="texto" placeholder="Ex: Ir a Academia" />
-        </div>
-        <br />
-        <div>
-            <p>Descrição:</p>
-            <br />
-            <input id="descricao" placeholder="Ex: Treinar Bícips e Costas" />
-        </div>
-        <br />
-        <button class="button" onclick="adicionar();">Adicionar</button>
+    <div class="log" id="log">
+        <form class="form" id="form">
+            <div>
+                <input type="text" name="nome" placeholder="Insira seu nome"class="box-nome" id="nome" required oninput="nomeValidar()"><br>
+            </div>
+
+            <div>
+                <input type="text" name="login" placeholder="Insira seu login"class="box-login" id="login" required oninput="loginValidar()"><br>
+            </div>
+
+            <div>
+                <input type="email" name="email" placeholder="Insira seu email" class="box-email" id="email" required><br>
+            </div>
+
+            <div>
+                <input type="password" name="senha" placeholder="Insira sua senha" class="box-senha" id="senha" required oninput="compareSenha()"><br>
+            </div>
+
+            <div>
+                <input type="password" name="conf-senha" placeholder="Confirme sua senha" class="box-conf-senha" id="confsenha" required oninput="compareSenha()">
+            </div>
+
+            <p>Esqueceu sua senha? <a href="#">Clique Aqui</a></p>
+            <input type="submit" value="Entrar" onclick="logar()" class="button">
+        </form>
     </div>
-    <div id="tarefas"></div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script-index.js"></script>
 </body>
 </html>

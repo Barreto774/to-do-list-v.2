@@ -10,7 +10,7 @@ function adicionar() {
 
         botao.innerHTML = "Remover";
         botao.className = "button";
-        botao.style.color = "red";
+        botao.style.color = "white";
         botao.addEventListener("click", function() {
             divNova.remove();
         });
@@ -51,16 +51,3 @@ document.addEventListener("keypress", function (e) {
 
     }
 });
-
-function logar(){
-
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById('senha').value;
-
-    if(login == "admin" && senha == "admin"){
-        location.href = "index.html";
-    }else{
-        alert('Usuario ou senha incorretos');
-    }
-
-}
