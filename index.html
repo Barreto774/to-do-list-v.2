@@ -22,7 +22,7 @@
             </div>
 
             <div>
-                <input type="email" name="email" placeholder="Insira seu email" class="box-email" id="email" oninput="emailValidar()"><br>
+                <input type="email" name="email" placeholder="Insira seu email" class="box-email" id="email" oninput="emailValidar()" required><br>
                 <span class="span">Digite um email válido</span>
             </div>
 
@@ -37,7 +37,7 @@
             </div>
 
             <p>Esqueceu sua senha? <a href="#">Clique Aqui</a></p>
-            <input type="submit" value="Entrar" class="button">
+            <input type="submit" value="Entrar" onclick="entrar()" class="button">
         </form>
     </div>
     <script type="text/javascript" src="script-index.js"></script>

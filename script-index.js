@@ -11,7 +11,8 @@ const form = document.getElementById('form');
 const nome = document.getElementById('nome');
 const login = document.getElementById('login');
 const email = document.getElementById('email');
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; /*regex email padrão*/
+/*const emailRegex = /\W|_/; /*Regex caractere especial*/ 
 const senha = document.getElementById('senha');
 const confsenha = document.getElementById('confsenha');
 const span = document.querySelectorAll('span');
@@ -20,6 +21,21 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 
 })
+
+function entrar(){
+    if(nome.value,login.value,email.value,senha.value,confsenha.value ==  "" )
+    {
+
+    }
+    else if(nome.value.length < 10 ,login.value.length > 10,!emailRegex.test(email.value),senha.value != confsenha.value)
+    {
+
+    }
+    else
+    {
+        window.location.href = "todo.html";
+    }
+}
 
 function nomeValidar(){
     
@@ -73,6 +89,7 @@ function emailValidar(){
     {
         email.style.border="3px solid #4ECA64";
         span[2].style.display="none";
+       
     }
 }
 
@@ -90,6 +107,7 @@ function compareSenha(){
         confsenha.style.border="3px solid #4ECA64";
         span[3].style.display="none";
         span[4].style.display="none";
+
     }
     else
     {
