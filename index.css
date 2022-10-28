@@ -65,9 +65,9 @@ body{
 .log span {
     display: none;
     font-size: 14px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     text-align:start;
-    margin-left: 472px;
+    margin-left: 435px;
     color: #DB5A5A;
     transition: all 1s;
 }
@@ -97,7 +97,7 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     transition: all 0.3s;
 }
 
@@ -112,7 +112,7 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     transition: all 0.3s;
 }
 
@@ -127,7 +127,7 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     transition: all 0.3s;
 }
 
@@ -142,7 +142,7 @@ body{
     align-items: center;
     outline: none;
     box-sizing: border-box;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     transition: all 0.3s;
 }
 
