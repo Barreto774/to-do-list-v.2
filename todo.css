@@ -92,6 +92,17 @@ body {
     width: 300px;
 }
 
+#dados {
+    font-size: 28pt;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+    padding: 30px 30px;
+    align-items: flex-start;
+}
+#dados p {
+    margin-bottom: 2rem;
+}
+
 .button {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;

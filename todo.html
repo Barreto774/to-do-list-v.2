@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="todo.css" />
@@ -11,6 +10,7 @@
         <p id="titulo">To do List</p>
         <p class="menu" onclick="cadastrar();">Cadastrar</p>
         <p class="menu" onclick="exibir();">Exibir</p>
+        <p class="menu" onclick="mostrarDados()";>Dados Cadastrados</p>
     </div>
     <div class="cad" id="cad">
         <div>
@@ -28,6 +28,12 @@
         <button class="button" onclick="adicionar();">Adicionar</button>
     </div>
     <div id="tarefas"></div>
+    <div id="dados">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+    </div>
     <script type="text/javascript" src="script-todo.js"></script>
 </body>
 </html>

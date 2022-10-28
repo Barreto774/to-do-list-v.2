@@ -19,7 +19,6 @@ const span = document.querySelectorAll('span');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-
 })
 
 function entrar(){
@@ -53,6 +52,8 @@ function nomeValidar(){
     {
         nome.style.border="3px solid #4ECA64";
         span[0].style.display="none";
+        var nomeSave = document.querySelector("#nome").value;
+        localStorage.setItem('nome', nomeSave);
     }
 }
 
@@ -71,6 +72,8 @@ function loginValidar(){
     {
         login.style.border="3px solid #4ECA64";
         span[1].style.display="none";
+        var loginSave = document.querySelector("#login").value;
+        localStorage.setItem('login', loginSave);
     }
 }
 
@@ -89,7 +92,8 @@ function emailValidar(){
     {
         email.style.border="3px solid #4ECA64";
         span[2].style.display="none";
-       
+        var emailSave = document.querySelector("#email").value;
+        localStorage.setItem('email', emailSave);
     }
 }
 
@@ -107,7 +111,8 @@ function compareSenha(){
         confsenha.style.border="3px solid #4ECA64";
         span[3].style.display="none";
         span[4].style.display="none";
-
+        var senhaSave = document.querySelector("#senha").value;
+        localStorage.setItem('senha', senhaSave);
     }
     else
     {

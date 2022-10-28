@@ -25,7 +25,6 @@ body{
 }
 #text-header {
     font-weight: bold;
-    
 }
 
 #log {
@@ -85,7 +84,6 @@ body{
     outline: none;
     box-sizing: border-box;
     transition: all 0.3s;
-    
 }
 
 #login {
@@ -217,21 +215,4 @@ body{
     border:none;
     width: 100%;
     box-shadow:0 0.1rem 0.5rem rgb(228, 228, 228);
-}
-
-a:link{
-    color: rgb(61, 61, 61);
-    text-decoration: none;
-}
-a:link:hover{
-    color: rgb(61, 61, 61);
-    text-decoration: none;
-}
-a:link:visited{
-    color: rgb(61, 61, 61);
-    text-decoration: none;
-}
-a:link:active{
-    color: rgb(61, 61, 61);
-    text-decoration: none;
 }
